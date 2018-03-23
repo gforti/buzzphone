@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title=title
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel="stylesheet" href='/style.css')
+  body
+    header Buzzer Phone
+    h1.url=gameUrl
+    div.container
+        h1.timer 0
+        button.start.sec30='Start 30'
+        button.start.sec60='Start 60'
+        button.pause='Pause'
+    div.container      
+      h2.js-active=`${users.length} joined`
+      ol.js-buzzes
+        each buzz in buzzes
+          li=`${buzz.name} on Team ${buzz.team}`
+      button.js-clear='Clear buzzes'
+           
+    script(src='/socket.io/socket.io.js')
+    script(src='/host.js')
+
+

@@ -1,2 +1,85 @@
-# buzzphone
-Host a simple buzzer web app server from your phone
+# Buzzphone
+Host a simple buzzer web app server from your phone. Players will visit the IP address displayed by the host.
+Players will tap on the buzzer.  The first to tap will highlight green.
+The host can reset the buzzer for all players.
+
+## Hosting on your Phone
+
+In order to run the node.js app on your phone, you will need a terminal app that supports the following
+- Node.js
+- NPM (Node package manager)
+- GIT
+
+### Android 
+
+Visit https://termux.com/  for details about the app.
+
+Download and install the app on your phone.
+
+### IPhone
+Not sure what support there is for this.
+
+#### Quick tips:
+
+- Vist https://wiki.termux.com/wiki/Touch_Keyboard for keyboard instructions
+- Press `Volume Up+Q` to enable the extra keys view on your native phone keyboard
+- in the command line use the following command and press enter to exit.
+
+```sh
+$ exit
+```
+
+#### Run the following commands
+
+Check for updates
+```sh
+$ apt update && apt upgrade
+```
+
+This will help install extra commands
+
+```sh
+$ apt install coreutils
+```
+
+Install Node.js which also comes with NPM
+```sh
+$ apt install nodejs
+```
+
+Install GIT
+```sh
+$ apt install git
+```
+
+## Terminal Setup
+
+```sh
+$ git clone https://github.com/gforti/buzzphone.git
+```
+
+Optional - to check all directories/folders
+```sh
+$ ls
+```
+
+Move into folder `buzzphone`
+```sh
+$ cd buzzphone
+```
+
+## Installation
+
+```sh
+$ npm install
+```
+
+## Start
+
+```sh
+$ npm start
+```
+
+> `Buzzer Players` will run on `http://localhost:3000/`
+
+> `Host` will run on `http://localhost:3000/host`

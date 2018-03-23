@@ -1,0 +1,17 @@
+{
+  "name": "buzzer Phone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Gabriel Forti",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.14.1",
+    "pug": "2.0.0-beta11",
+    "socketio": "1.0.0",
+    "ip": "^1.1.5"
+  }
+}
