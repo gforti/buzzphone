@@ -29,6 +29,22 @@ Not sure what support there is for this.
 $ exit
 ```
 
+Delete Folder
+```sh
+$ rm -rf [folder-name]
+```
+
+If you need permissions use
+```sh
+$ sudo rm -rf [folder-name]
+```
+
+| Short Command | Use |
+| ------ | ------ |
+| -f | Ignore non-existent files, never prompt |
+| -r | Remove directories and their contents recursively |
+| -v | Explain what is being done |
+
 #### Run the following commands
 
 Check for updates
